@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wine Quality Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin: 20px auto;
+            width: 60%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        input[type="submit"] {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wine Quality Prediction</h1>
+    <form method="post" action="/predict">
+        <label for="free_sulfur_dioxide">Free Sulfur Dioxide:</label>
+        <input type="number" step="0.01" name="free_sulfur_dioxide" required><br>
+
+        <label for="total_sulfur_dioxide">Total Sulfur Dioxide:</label>
+        <input type="number" step="0.01" name="total_sulfur_dioxide" required><br>
+
+        <label for="density">Density:</label>
+        <input type="number" step="0.0001" name="density" required><br>
+
+        <label for="pH">pH:</label>
+        <input type="number" step="0.01" name="pH" required><br>
+
+        <label for="sulphates">Sulphates:</label>
+        <input type="number" step="0.01" name="sulphates" required><br>
+
+        <label for="alcohol">Alcohol:</label>
+        <input type="number" step="0.01" name="alcohol" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

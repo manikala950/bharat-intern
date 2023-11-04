@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wine Quality Prediction</title>
+    <style>
+        /* Apply styles to the container */
+        .container {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 0 auto;
+            width: 80%;
+        }
+        
+        /* Style for the heading */
+        .heading {
+            font-size: 24px;
+            color: #333;
+            margin-top: 10px;
+        }
+        
+        /* Style for the prediction text */
+        .prediction {
+            font-size: 18px;
+            color: #0073e6;
+            margin-top: 20px;
+        }
+        
+        /* Style for the buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: #fff;
+            text-decoration: none;
+            margin: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        /* Hover effect for buttons */
+        .btn:hover {
+            background-color: #005bb9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wine Quality Prediction Result</h1>
+        <p>{{ prediction }}</p>
+        
+    </div>
+    <p><a href="http://127.0.0.1:5000">Go back to the homepage</a></p>
+</body>
+</html>
